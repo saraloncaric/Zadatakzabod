@@ -37,7 +37,7 @@
 
       <h1 class="text-3xl md:text-4xl font-bold text-center">Pozdrav, ja sam Sara Lončarić </h1>
 
-      <h2 class="text-md md:text-lg text-center mt-4">Moji omiljeni fimovi:</h2>
+      <h2 class="text-md md:text-lg text-left ml-9 mt-4">Moji omiljeni fimovi:</h2>
 
       <div class="flex flex-wrap justify-center gap-4 md:gap-6 mt-6">
         <div v-for="film in filmovi" :key="film.naslov"
@@ -49,7 +49,7 @@
         </div>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-4 md:gap-4 mt-4 text-sm md:text-lg">
+      <div class="flex flex-wrap justify-evenly gap-4 md:gap-4 mt-4 text-sm md:text-lg">
         <span v-for="film in filmovi" :key="film.naslov" class="text-xl">{{ film.naslov }}</span>
       </div>
     
